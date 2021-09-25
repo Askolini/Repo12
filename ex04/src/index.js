@@ -6,16 +6,20 @@ function sumFibonacci(num) {
     if (num <= 2){
         return 1;
     } else {
-    var fiboNum = (fibo(num-1) + fibo(num-2) <= num);
-        return fiboNum;
+    var fiboNum = fibo(num-1) + fibo(num-2);
+    return fiboNum;
+    // if (fiboNum % 2 !== 0 && fiboNum <= num) {
+    //     fiboOdd = fiboNum + fiboOdd;
+    //     return fiboOdd;
+    // }
     }
 
-    sumFibonacci(1);
-    sumFibonacci(10);
-    sumFibonacci(20);
-    sumFibonacci(4);
-    sumFibonacci(-5);
 }
+sumFibonacci(1);
+sumFibonacci(10);
+sumFibonacci(20);
+sumFibonacci(4);
+sumFibonacci(-5);
 
 console.log(sumFibonacci(1));
 console.log(sumFibonacci(10));
