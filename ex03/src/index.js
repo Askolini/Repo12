@@ -1,6 +1,8 @@
 function rangeOfNumbers(startN, endN) {
     if (endN < startN) {
-        return [];
+        return "The starting number will always be less than or equal to the ending number";
+    } else if (startN == endN) {
+        return [startN];
     } else {
         const countArray = rangeOfNumbers(startN, endN-1);
         countArray.push(endN);
